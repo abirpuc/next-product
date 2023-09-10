@@ -15,8 +15,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <nav className="container mx-auto bg-black backdrop-blur-2xl h-[50px] flex justify-between items-center">
           <h1>Dummy API</h1>
-          <div>
-          <Link href="/">Home</Link>
+          <div className="flex justify-around gap-y-4 w-1/4">
+          <Link className="py-2" href="/">Home</Link>
+          <Link className="py-2" href="/cart">Cart</Link>
           </div>
         </nav>
         <main>{children}</main>
